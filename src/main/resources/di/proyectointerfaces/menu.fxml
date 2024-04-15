@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="fondo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.proyectointerfaces.Controlador">
+   <children>
+      <Label style="-fx-text-fill: white;" text="MENÚ">
+         <VBox.margin>
+            <Insets bottom="60.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <HBox prefHeight="26.0" prefWidth="443.0">
+         <children>
+            <Label style="-fx-text-fill: white;" text="Elige una opción: ">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="60.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="82.0" prefWidth="443.0" spacing="30.0">
+         <children>
+            <Button fx:id="facil" mnemonicParsing="false" onAction="#nivelFacil" style="-fx-background-color: cyan;" text="Cinco letras">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="medio" mnemonicParsing="false" onAction="#nivelMedio" style="-fx-background-color: orange;" text="Seis letras">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="dificil" mnemonicParsing="false" onAction="#nivelDificil" style="-fx-background-color: purple; -fx-text-fill: white;" text="Siete letras">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+         <VBox.margin>
+            <Insets top="30.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
