@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="700.0" spacing="10.0">
+         <VBox.margin>
+            <Insets bottom="80.0" top="100.0" />
+         </VBox.margin>
+         <children>
+            <TextArea fx:id="l1" disable="true" prefHeight="48.0" prefWidth="70.0" />
+            <TextArea fx:id="l2" disable="true" prefHeight="48.0" prefWidth="70.0" />
+            <TextArea fx:id="l3" disable="true" prefHeight="48.0" prefWidth="70.0" />
+            <TextArea fx:id="l4" disable="true" prefHeight="48.0" prefWidth="70.0" />
+            <TextArea fx:id="l5" disable="true" prefHeight="48.0" prefWidth="70.0" />
+            <TextArea fx:id="l6" disable="true" prefHeight="48.0" prefWidth="70.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Q" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="W" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="E" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="R" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="T" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Y" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="U" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="I" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="O" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="P" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="40.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="A" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="S" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="D" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="F" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="G" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="H" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="J" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="K" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="L" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Ñ" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="60.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Z" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="X" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="C" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="V" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="B" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="N" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="M" />
+         </children>
+         <VBox.margin>
+            <Insets left="80.0" />
+         </VBox.margin>
+      </HBox>
+      <VBox prefHeight="52.0" prefWidth="700.0">
+         <children>
+            <Label text="Intentos">
+               <VBox.margin>
+                  <Insets left="43.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea maxHeight="-Infinity" minHeight="-Infinity" opacity="0.2" prefHeight="25.0" prefWidth="660.0">
+               <VBox.margin>
+                  <Insets left="40.0" right="40.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </TextArea>
+         </children>
+         <VBox.margin>
+            <Insets top="70.0" />
+         </VBox.margin>
+      </VBox>
+   </children>
+</VBox>
