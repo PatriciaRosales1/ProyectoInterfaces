@@ -9,39 +9,25 @@
 
 <VBox fx:id="fondo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.proyectointerfaces.Controlador">
    <children>
-      <Label style="-fx-text-fill: white;" text="MENÚ">
-         <VBox.margin>
-            <Insets bottom="60.0" />
-         </VBox.margin>
+      <Label prefHeight="143.0" prefWidth="166.0" style="-fx-text-fill: white;" text="Elige una opción: ">
          <font>
-            <Font name="System Bold" size="40.0" />
+            <Font name="System Bold" size="20.0" />
          </font>
       </Label>
-      <HBox prefHeight="26.0" prefWidth="443.0">
-         <children>
-            <Label style="-fx-text-fill: white;" text="Elige una opción: ">
-               <font>
-                  <Font name="System Bold" size="20.0" />
-               </font>
-               <HBox.margin>
-                  <Insets left="60.0" />
-               </HBox.margin>
-            </Label>
-         </children>
-      </HBox>
+      <HBox prefHeight="26.0" prefWidth="443.0" />
       <HBox alignment="CENTER" prefHeight="82.0" prefWidth="443.0" spacing="30.0">
          <children>
-            <Button fx:id="facil" mnemonicParsing="false" onAction="#nivelFacil" style="-fx-background-color: cyan;" text="Cinco letras">
+            <Button fx:id="facil" alignment="CENTER" mnemonicParsing="false" onAction="#nivelFacil" prefHeight="108.0" prefWidth="166.0" style="-fx-background-radius: 100px; -fx-background-color: cyan;" text="Cinco letras">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="medio" mnemonicParsing="false" onAction="#nivelMedio" style="-fx-background-color: orange;" text="Seis letras">
+            <Button fx:id="medio" alignment="CENTER" mnemonicParsing="false" onAction="#nivelMedio" prefHeight="108.0" prefWidth="166.0" style="-fx-background-radius: 100px; -fx-background-color: orange;" text="Seis letras">
                <font>
                   <Font size="15.0" />
                </font>
             </Button>
-            <Button fx:id="dificil" mnemonicParsing="false" onAction="#nivelDificil" style="-fx-background-color: purple; -fx-text-fill: white;" text="Siete letras">
+            <Button fx:id="dificil" alignment="CENTER" mnemonicParsing="false" onAction="#nivelDificil" prefHeight="108.0" prefWidth="166.0" style="-fx-background-radius: 100px; -fx-background-color: violet;" text="Siete letras">
                <font>
                   <Font size="15.0" />
                </font>

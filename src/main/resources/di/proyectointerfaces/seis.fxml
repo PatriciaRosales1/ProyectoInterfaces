@@ -3,93 +3,164 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.proyectointerfaces.Controlador">
    <children>
-      <HBox alignment="CENTER" prefHeight="65.0" prefWidth="700.0" spacing="10.0">
-         <VBox.margin>
-            <Insets bottom="80.0" top="100.0" />
-         </VBox.margin>
+      <HBox alignment="CENTER" prefHeight="66.0" prefWidth="900.0">
          <children>
-            <TextArea fx:id="l1" disable="true" prefHeight="48.0" prefWidth="70.0" />
-            <TextArea fx:id="l2" disable="true" prefHeight="48.0" prefWidth="70.0" />
-            <TextArea fx:id="l3" disable="true" prefHeight="48.0" prefWidth="70.0" />
-            <TextArea fx:id="l4" disable="true" prefHeight="48.0" prefWidth="70.0" />
-            <TextArea fx:id="l5" disable="true" prefHeight="48.0" prefWidth="70.0" />
-            <TextArea fx:id="l6" disable="true" prefHeight="48.0" prefWidth="70.0" />
-         </children>
-      </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Q" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="W" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="E" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="R" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="T" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Y" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="U" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="I" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="O" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="P" />
-         </children>
-         <VBox.margin>
-            <Insets bottom="10.0" left="40.0" />
-         </VBox.margin>
-      </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="A" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="S" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="D" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="F" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="G" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="H" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="J" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="K" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="L" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Ñ" />
-         </children>
-         <VBox.margin>
-            <Insets bottom="10.0" left="60.0" />
-         </VBox.margin>
-      </HBox>
-      <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
-         <children>
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Z" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="X" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="C" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="V" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="B" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="N" />
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="M" />
-         </children>
-         <VBox.margin>
-            <Insets left="80.0" />
-         </VBox.margin>
-      </HBox>
-      <VBox prefHeight="52.0" prefWidth="700.0">
-         <children>
-            <Label text="Intentos">
-               <VBox.margin>
-                  <Insets left="43.0" />
-               </VBox.margin>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#07ff07" height="20.0" stroke="#000000a4" strokeType="INSIDE" width="20.0" />
+            <Label text="Correcto">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
             </Label>
-            <TextArea maxHeight="-Infinity" minHeight="-Infinity" opacity="0.2" prefHeight="25.0" prefWidth="660.0">
-               <VBox.margin>
-                  <Insets left="40.0" right="40.0" />
-               </VBox.margin>
-               <font>
-                  <Font size="11.0" />
-               </font>
-            </TextArea>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="20.0" stroke="#000000a3" strokeType="INSIDE" width="20.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Rectangle>
+            <Label text="Posición incorrecta">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="20.0" stroke="#000000a3" strokeType="INSIDE" width="20.0">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Rectangle>
+            <Label text="No existe">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Label>
          </children>
          <VBox.margin>
-            <Insets top="70.0" />
+            <Insets right="180.0" />
          </VBox.margin>
-      </VBox>
+      </HBox>
+      <HBox prefHeight="445.0" prefWidth="900.0">
+         <children>
+            <VBox prefHeight="373.0" prefWidth="732.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="65.0" prefWidth="700.0" spacing="10.0">
+                     <VBox.margin>
+                        <Insets bottom="80.0" top="100.0" />
+                     </VBox.margin>
+                     <children>
+                        <TextField fx:id="l1" alignment="CENTER" prefHeight="68.0" prefWidth="73.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="l2" alignment="CENTER" prefHeight="68.0" prefWidth="73.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="l3" alignment="CENTER" prefHeight="68.0" prefWidth="73.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="l4" alignment="CENTER" prefHeight="68.0" prefWidth="73.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="l5" alignment="CENTER" prefHeight="68.0" prefWidth="73.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="l6" alignment="CENTER" prefHeight="68.0" prefWidth="73.0">
+                           <font>
+                              <Font size="30.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
+                     <children>
+                        <Button fx:id="letraQ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Q" />
+                        <Button fx:id="letraW" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="W" />
+                        <Button fx:id="letraE" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="E" />
+                        <Button fx:id="letraR" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="R" />
+                        <Button fx:id="letraT" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="T" />
+                        <Button fx:id="letraY" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Y" />
+                        <Button fx:id="letraU" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="U" />
+                        <Button fx:id="letraI" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="I" />
+                        <Button fx:id="letraO" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="O" />
+                        <Button fx:id="letraP" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="P" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="40.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
+                     <children>
+                        <Button fx:id="letraA" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="A" />
+                        <Button fx:id="letraS" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="S" />
+                        <Button fx:id="letraD" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="D" />
+                        <Button fx:id="letraF" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="F" />
+                        <Button fx:id="letraG" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="G" />
+                        <Button fx:id="letraH" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="H" />
+                        <Button fx:id="letraJ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="J" />
+                        <Button fx:id="letraK" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="K" />
+                        <Button fx:id="letraL" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="L" />
+                        <Button fx:id="letraÑ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Ñ" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="60.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
+                     <children>
+                        <Button fx:id="letraZ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Z" />
+                        <Button fx:id="letraX" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="X" />
+                        <Button fx:id="letraC" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="C" />
+                        <Button fx:id="letraV" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="V" />
+                        <Button fx:id="letraB" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="B" />
+                        <Button fx:id="letraN" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="N" />
+                        <Button fx:id="letraM" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="M" />
+                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Comprobar" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="80.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="TOP_CENTER" style="-fx-border-color: steelblue;">
+               <children>
+                  <Label text="Intentos">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <VBox fx:id="intentos" alignment="TOP_CENTER" prefHeight="78.0" prefWidth="185.0">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="68.0" prefWidth="900.0" spacing="100.0">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Nueva partida" />
+            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Inicio" />
+            <Button mnemonicParsing="false" onAction="#salir" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Salir" />
+         </children>
+      </HBox>
    </children>
 </VBox>
