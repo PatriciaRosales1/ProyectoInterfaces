@@ -9,7 +9,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.proyectointerfaces.Controlador">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.proyectointerfaces.ControladorSiete">
    <children>
       <HBox alignment="CENTER" prefHeight="66.0" prefWidth="900.0">
          <children>
@@ -90,7 +90,7 @@
                         </TextField>
                      </children>
                   </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
+                  <HBox fx:id="hboxBotones1" alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
                      <children>
                         <Button fx:id="letraQ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Q" />
                         <Button fx:id="letraW" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="W" />
@@ -107,7 +107,7 @@
                         <Insets bottom="10.0" left="40.0" />
                      </VBox.margin>
                   </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
+                  <HBox fx:id="hboxBotones2" alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
                      <children>
                         <Button fx:id="letraA" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="A" />
                         <Button fx:id="letraS" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="S" />
@@ -124,7 +124,7 @@
                         <Insets bottom="10.0" left="60.0" />
                      </VBox.margin>
                   </HBox>
-                  <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
+                  <HBox fx:id="hboxBotones3" alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
                      <children>
                         <Button fx:id="letraZ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Z" />
                         <Button fx:id="letraX" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="X" />
@@ -133,7 +133,7 @@
                         <Button fx:id="letraB" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="B" />
                         <Button fx:id="letraN" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="N" />
                         <Button fx:id="letraM" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="M" />
-                        <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Comprobar" />
+                        <Button mnemonicParsing="false" onAction="#comprobarPalabra" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Comprobar" />
                      </children>
                      <VBox.margin>
                         <Insets left="80.0" />
@@ -148,7 +148,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Label>
-                  <VBox alignment="TOP_CENTER" prefHeight="78.0" prefWidth="185.0">
+                  <VBox fx:id="intentos" alignment="TOP_CENTER" prefHeight="78.0" prefWidth="185.0">
                      <VBox.margin>
                         <Insets top="20.0" />
                      </VBox.margin>
@@ -159,7 +159,7 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="68.0" prefWidth="900.0" spacing="100.0">
          <children>
-            <Button mnemonicParsing="false" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Nueva partida" />
+            <Button mnemonicParsing="false" onAction="#nuevaPartida" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Nueva partida" />
             <Button fx:id="inicio" mnemonicParsing="false" onAction="#inicio" prefHeight="37.0" prefWidth="80.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Inicio" />
             <Button mnemonicParsing="false" onAction="#salir" prefHeight="37.0" prefWidth="97.0" style="-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;" text="Salir" />
          </children>
