@@ -1,3 +1,10 @@
+/**
+ * Clase: Aplicacion
+ * Autor: Patricia Rosales
+ * Fecha de creación: 2024
+ * Descripción-Enunciado: Clase para ejecutar el proyecto
+ */
+
 package di.proyectointerfaces;
 
 import javafx.application.Application;
@@ -11,7 +18,7 @@ public class Aplicacion extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Aplicacion.class.getResource("menu.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 700, 550);
+        Scene scene = new Scene(fxmlLoader.load(), 900, 600);
         stage.setTitle("Palabra del dia");
         stage.setScene(scene);
         stage.show();

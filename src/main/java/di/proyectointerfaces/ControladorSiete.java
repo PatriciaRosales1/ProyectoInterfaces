@@ -1,3 +1,10 @@
+/**
+ * Clase: ControladorSiete
+ * Autor: Patricia Rosales
+ * Fecha de creación: 2024
+ * Descripción-Enunciado: Controlador para la opción de siete letras
+ */
+
 package di.proyectointerfaces;
 
 import javafx.application.Platform;
@@ -24,7 +31,7 @@ import java.util.*;
 
 public class ControladorSiete implements Initializable {
     private String palabraSecreta;
-    private final int MAX_INTENTOS = 5;
+    private final int intentosMaximos = 5;
     private int intentosRealizados = 0;
 
     @FXML
@@ -65,12 +72,17 @@ public class ControladorSiete implements Initializable {
     private Set<String> letrasPulsadas = new HashSet<>();
 
 
+    @FXML
+    private Button botonComprobar;
+
+
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cargarPalabraSecreta();
     }
 
 
+    /**Método para que se escriba la letra pulsada si la casilla está vacía*/
     @FXML
     public void pulsarTecla(ActionEvent event) {
         Button btn = (Button) event.getSource();
@@ -96,6 +108,7 @@ public class ControladorSiete implements Initializable {
     }
 
 
+    /**Método para seleccionar una palabra aleatoria del archivo*/
     public void cargarPalabraSecreta() {
         List<String> palabras = new ArrayList<>();
 
@@ -105,9 +118,7 @@ public class ControladorSiete implements Initializable {
         try (BufferedReader br = new BufferedReader(new FileReader(archivoPalabras))) {
             String linea;
             while ((linea = br.readLine()) != null) {
-                // Separar la línea en palabras individuales
                 String[] palabrasEnLinea = linea.split(" ");
-                // Agregar las palabras a la lista
                 for (String palabra : palabrasEnLinea) {
                     palabras.add(palabra);
                 }
@@ -117,37 +128,34 @@ public class ControladorSiete implements Initializable {
         }
 
         // Seleccionar una palabra aleatoria de la lista
-        Random rand = new Random();
-        palabraSecreta = palabras.get(rand.nextInt(palabras.size()));
+        Random aleatoria = new Random();
+        palabraSecreta = palabras.get(aleatoria.nextInt(palabras.size()));
         System.out.println(palabraSecreta);
     }
 
 
+    /**Método para comprobar si la palabra es correcta o no*/
     @FXML
     private void comprobarPalabra() {
         // Verificar si se han alcanzado el máximo de intentos
-        if (intentosRealizados >= MAX_INTENTOS) {
+        if (intentosRealizados == intentosMaximos) {
             mostrarMensaje("¡Lo siento!", "Has alcanzado el límite de intentos.\nLa palabra correcta era: " + palabraSecreta);
             return;
         }
 
         String palabraIngresada = l1.getText() + l2.getText() + l3.getText() + l4.getText() + l5.getText() + l6.getText() + l7.getText();
 
-        // Iterar sobre cada botón
         for (Node nodo : hboxBotones1.getChildren()) {
             if (nodo instanceof Button) {
                 Button boton = (Button) nodo;
                 String letraBoton = boton.getText();
 
-                // Verificar si la letra del botón ha sido pulsada
+                // Verificar si la letra del botón ha sido pulsada y cambia el color según esté o no en la palabra secreta
                 if (letrasPulsadas.contains(letraBoton)) {
-                    // Cambiar el color del botón según si la letra está en la palabra secreta o no
                     if (palabraSecreta.contains(letraBoton)) {
-                        // La letra está en la palabra secreta, cambiar el color del botón a verde
-                        boton.setStyle("-fx-background-color: green; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: green; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
                     } else {
-                        // La letra no está en la palabra secreta, cambiar el color del botón a rojo
-                        boton.setStyle("-fx-background-color: red; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: red; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
                     }
                 }
             }
@@ -158,15 +166,12 @@ public class ControladorSiete implements Initializable {
                 Button boton = (Button) nodo;
                 String letraBoton = boton.getText();
 
-                // Verificar si la letra del botón ha sido pulsada
+                // Verificar si la letra del botón ha sido pulsada y cambia el color según esté o no en la palabra secreta
                 if (letrasPulsadas.contains(letraBoton)) {
-                    // Cambiar el color del botón según si la letra está en la palabra secreta o no
                     if (palabraSecreta.contains(letraBoton)) {
-                        // La letra está en la palabra secreta, cambiar el color del botón a verde
-                        boton.setStyle("-fx-background-color: green; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: green; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
                     } else {
-                        // La letra no está en la palabra secreta, cambiar el color del botón a rojo
-                        boton.setStyle("-fx-background-color: red; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: red; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
                     }
                 }
             }
@@ -177,17 +182,15 @@ public class ControladorSiete implements Initializable {
                 Button boton = (Button) nodo;
                 String letraBoton = boton.getText();
 
-                // Verificar si la letra del botón ha sido pulsada
+                // Verificar si la letra del botón ha sido pulsada y cambia el color según esté o no en la palabra secreta
                 if (letrasPulsadas.contains(letraBoton)) {
-                    // Cambiar el color del botón según si la letra está en la palabra secreta o no
                     if (palabraSecreta.contains(letraBoton)) {
-                        // La letra está en la palabra secreta, cambiar el color del botón a verde
-                        boton.setStyle("-fx-background-color: green; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: green; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
                     } else {
-                        // La letra no está en la palabra secreta, cambiar el color del botón a rojo
-                        boton.setStyle("-fx-background-color: red; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: red; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
                     }
                 }
+
             }
         }
 
@@ -223,6 +226,7 @@ public class ControladorSiete implements Initializable {
     }
 
 
+    /**Método para empezar una partida nueva, se deja como estaba al principio*/
     public void nuevaPartida() {
         l1.clear();
         l2.clear();
@@ -250,12 +254,14 @@ public class ControladorSiete implements Initializable {
             if (nodo instanceof Button) {
                 Button boton = (Button) nodo;
                 boton.setStyle("-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;");
+                botonComprobar.setStyle("-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
             }
         }
         cargarPalabraSecreta();
     }
 
 
+    /**Método para volver al menú de inicio*/
     @FXML
     void inicio() {
         try {

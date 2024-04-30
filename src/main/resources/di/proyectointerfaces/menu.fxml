@@ -7,15 +7,26 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="fondo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.proyectointerfaces.Controlador">
+<VBox fx:id="fondo" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.proyectointerfaces.Controlador">
    <children>
-      <Label prefHeight="143.0" prefWidth="166.0" style="-fx-text-fill: white;" text="Elige una opción: ">
+      <Label alignment="CENTER" contentDisplay="CENTER" maxWidth="1.7976931348623157E308" prefHeight="64.0" prefWidth="166.0" text="Palabra Del Día">
          <font>
-            <Font name="System Bold" size="20.0" />
+            <Font name="System Bold" size="36.0" />
          </font>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
+      </Label>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="64.0" prefWidth="166.0" text="Menú">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="50.0" />
+         </VBox.margin>
       </Label>
       <HBox prefHeight="26.0" prefWidth="443.0" />
-      <HBox alignment="CENTER" prefHeight="82.0" prefWidth="443.0" spacing="30.0">
+      <VBox alignment="CENTER" prefHeight="227.0" prefWidth="700.0" spacing="20.0">
          <children>
             <Button fx:id="facil" alignment="CENTER" mnemonicParsing="false" onAction="#nivelFacil" prefHeight="108.0" prefWidth="166.0" style="-fx-background-radius: 100px; -fx-background-color: cyan;" text="Cinco letras">
                <font>
@@ -34,8 +45,8 @@
             </Button>
          </children>
          <VBox.margin>
-            <Insets top="30.0" />
+            <Insets top="20.0" />
          </VBox.margin>
-      </HBox>
+      </VBox>
    </children>
 </VBox>

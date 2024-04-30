@@ -1,29 +1,27 @@
+/**
+ * Clase: Controlador
+ * Autor: Patricia Rosales
+ * Fecha de creación: 2024
+ * Descripción-Enunciado: Controlador principal para cargar cada opción
+ */
+
 package di.proyectointerfaces;
 
-import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.IOException;
 import java.net.URL;
 import java.util.*;
 
 public class Controlador implements Initializable {
-    private String palabraSecreta;
 
     @FXML
     private Button dificil;
@@ -37,43 +35,6 @@ public class Controlador implements Initializable {
     @FXML
     private Button medio;
 
-    @FXML
-    private Button inicio;
-
-    @FXML
-    private TextField l1;
-
-    @FXML
-    private TextField l2;
-
-    @FXML
-    private TextField l3;
-
-    @FXML
-    private TextField l4;
-
-    @FXML
-    private TextField l5;
-
-    @FXML
-    private TextField l6;
-
-    @FXML
-    private TextField l7;
-
-    @FXML
-    private VBox intentos;
-
-
-    @FXML
-    private HBox hboxBotones1;
-
-    @FXML
-    private HBox hboxBotones2;
-
-    @FXML
-    private HBox hboxBotones3;
-
 
 
     @FXML
@@ -85,7 +46,7 @@ public class Controlador implements Initializable {
     private void cargarImagenDeFondo() {
         try {
             // Ajusta la ruta de la imagen según tu estructura de proyecto
-            Image imagenFondo = new Image(getClass().getResourceAsStream("/di/proyectointerfaces/fondo.jpg"));
+            Image imagenFondo = new Image(getClass().getResourceAsStream("/di/proyectointerfaces/"));
 
             BackgroundImage fondo1 = new BackgroundImage(imagenFondo, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, BackgroundSize.DEFAULT);
             Background fondo2 = new Background(fondo1);
@@ -97,7 +58,7 @@ public class Controlador implements Initializable {
     }
 
 
-
+    /**Método para cargar la opción de cinco letras*/
     @FXML
     void nivelFacil() {
         try {
@@ -116,6 +77,8 @@ public class Controlador implements Initializable {
         }
     }
 
+
+    /**Método para cargar la opción de seis letras*/
     @FXML
     void nivelMedio() {
         try {
@@ -134,6 +97,8 @@ public class Controlador implements Initializable {
         }
     }
 
+
+    /**Método para cargar la opción de siete letras*/
     @FXML
     void nivelDificil() {
         try {
