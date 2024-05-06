@@ -19,8 +19,8 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
-import javafx.scene.layout.HBox;
-import javafx.scene.layout.VBox;
+import javafx.scene.image.Image;
+import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
 import java.io.BufferedReader;
@@ -75,10 +75,28 @@ public class ControladorSiete implements Initializable {
     @FXML
     private Button botonComprobar;
 
+    @FXML
+    private VBox fondo;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         cargarPalabraSecreta();
+        cargarImagenDeFondo();
+    }
+
+
+    private void cargarImagenDeFondo() {
+        try {
+            // Ajusta la ruta de la imagen según tu estructura de proyecto
+            Image imagenFondo = new Image(getClass().getResourceAsStream("/di/proyectointerfaces/fondo.png"));
+
+            BackgroundImage fondo1 = new BackgroundImage(imagenFondo, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, BackgroundSize.DEFAULT);
+            Background fondo2 = new Background(fondo1);
+
+            fondo.setBackground(fondo2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -254,7 +272,7 @@ public class ControladorSiete implements Initializable {
             if (nodo instanceof Button) {
                 Button boton = (Button) nodo;
                 boton.setStyle("-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;");
-                botonComprobar.setStyle("-fx-background-color: grey; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
+                botonComprobar.setStyle("-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
             }
         }
         cargarPalabraSecreta();

@@ -39,14 +39,14 @@ public class Controlador implements Initializable {
 
     @FXML
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        //cargarImagenDeFondo();
+        cargarImagenDeFondo();
     }
 
 
     private void cargarImagenDeFondo() {
         try {
             // Ajusta la ruta de la imagen según tu estructura de proyecto
-            Image imagenFondo = new Image(getClass().getResourceAsStream("/di/proyectointerfaces/"));
+            Image imagenFondo = new Image(getClass().getResourceAsStream("/di/proyectointerfaces/fondo.png"));
 
             BackgroundImage fondo1 = new BackgroundImage(imagenFondo, BackgroundRepeat.NO_REPEAT, BackgroundRepeat.NO_REPEAT, BackgroundPosition.CENTER, BackgroundSize.DEFAULT);
             Background fondo2 = new Background(fondo1);

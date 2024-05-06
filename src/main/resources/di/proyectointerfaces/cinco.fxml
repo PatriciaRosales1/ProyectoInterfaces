@@ -11,7 +11,7 @@
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="fondo" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.proyectointerfaces.ControladorCinco">
+<VBox fx:id="fondo" alignment="CENTER" maxHeight="600.0" maxWidth="900.0" minHeight="600.0" minWidth="900.0" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di.proyectointerfaces.ControladorCinco">
    <children>
       <HBox alignment="CENTER" prefHeight="66.0" prefWidth="900.0">
          <children>
@@ -74,16 +74,16 @@
                   </HBox>
                   <HBox fx:id="hboxBotones1" alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
                      <children>
-                        <Button fx:id="letraQ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Q" />
-                        <Button fx:id="letraW" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="W" />
-                        <Button fx:id="letraE" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="E" />
-                        <Button fx:id="letraR" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="R" />
-                        <Button fx:id="letraT" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="T" />
-                        <Button fx:id="letraY" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Y" />
-                        <Button fx:id="letraU" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="U" />
-                        <Button fx:id="letraI" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="I" />
-                        <Button fx:id="letraO" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="O" />
-                        <Button fx:id="letraP" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="P" />
+                        <Button fx:id="letraQ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="Q" />
+                        <Button fx:id="letraW" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="W" />
+                        <Button fx:id="letraE" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="E" />
+                        <Button fx:id="letraR" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="R" />
+                        <Button fx:id="letraT" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="T" />
+                        <Button fx:id="letraY" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="Y" />
+                        <Button fx:id="letraU" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="U" />
+                        <Button fx:id="letraI" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="I" />
+                        <Button fx:id="letraO" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="O" />
+                        <Button fx:id="letraP" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="P" />
                      </children>
                      <VBox.margin>
                         <Insets bottom="10.0" left="40.0" />
@@ -91,16 +91,16 @@
                   </HBox>
                   <HBox fx:id="hboxBotones2" alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
                      <children>
-                        <Button fx:id="letraA" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="A" />
-                        <Button fx:id="letraS" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="S" />
-                        <Button fx:id="letraD" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="D" />
-                        <Button fx:id="letraF" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="F" />
-                        <Button fx:id="letraG" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="G" />
-                        <Button fx:id="letraH" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="H" />
-                        <Button fx:id="letraJ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="J" />
-                        <Button fx:id="letraK" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="K" />
-                        <Button fx:id="letraL" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="L" />
-                        <Button fx:id="letraÑ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Ñ" />
+                        <Button fx:id="letraA" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="A" />
+                        <Button fx:id="letraS" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="S" />
+                        <Button fx:id="letraD" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="D" />
+                        <Button fx:id="letraF" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="F" />
+                        <Button fx:id="letraG" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="G" />
+                        <Button fx:id="letraH" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="H" />
+                        <Button fx:id="letraJ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="J" />
+                        <Button fx:id="letraK" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="K" />
+                        <Button fx:id="letraL" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="L" />
+                        <Button fx:id="letraÑ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="Ñ" />
                      </children>
                      <VBox.margin>
                         <Insets bottom="10.0" left="60.0" />
@@ -108,21 +108,24 @@
                   </HBox>
                   <HBox fx:id="hboxBotones3" alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="700.0" spacing="18.0">
                      <children>
-                        <Button fx:id="letraZ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="Z" />
-                        <Button fx:id="letraX" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="X" />
-                        <Button fx:id="letraC" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="C" />
-                        <Button fx:id="letraV" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="V" />
-                        <Button fx:id="letraB" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="B" />
-                        <Button fx:id="letraN" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="N" />
-                        <Button fx:id="letraM" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;" text="M" />
-                        <Button fx:id="botonComprobar" mnemonicParsing="false" onAction="#comprobarPalabra" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;">
+                        <Button fx:id="letraZ" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="Z" />
+                        <Button fx:id="letraX" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="X" />
+                        <Button fx:id="letraC" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="C" />
+                        <Button fx:id="letraV" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="V" />
+                        <Button fx:id="letraB" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="B" />
+                        <Button fx:id="letraN" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="N" />
+                        <Button fx:id="letraM" mnemonicParsing="false" onAction="#pulsarTecla" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: white; -fx-border-radius: 5px; -fx-border-color: black;" text="M" />
+                        <Button fx:id="botonComprobar" mnemonicParsing="false" onAction="#comprobarPalabra" prefHeight="37.0" prefWidth="43.0" style="-fx-background-color: steelblue; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;">
                            <graphic>
-                              <ImageView fitHeight="20.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="28.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@iconos/comprobar.png" />
+                                    <Image url="@iconos/flecha.png" />
                                  </image>
                               </ImageView>
-                           </graphic></Button>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="41.0" />
+                           </HBox.margin></Button>
                      </children>
                      <VBox.margin>
                         <Insets left="80.0" />
@@ -148,15 +151,15 @@
       </HBox>
       <HBox alignment="CENTER" prefHeight="68.0" prefWidth="900.0" spacing="100.0">
          <children>
-            <Button mnemonicParsing="false" onAction="#nuevaPartida" prefHeight="46.0" prefWidth="54.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;">
+            <Button mnemonicParsing="false" onAction="#nuevaPartida" prefHeight="33.0" prefWidth="23.0" style="-fx-background-color: beige; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;">
                <graphic>
                   <ImageView fitHeight="36.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@iconos/repetir.png" />
+                        <Image url="@iconos/+.png" />
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button fx:id="inicio" mnemonicParsing="false" onAction="#inicio" prefHeight="37.0" prefWidth="0.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;">
+            <Button fx:id="inicio" mnemonicParsing="false" onAction="#inicio" prefHeight="33.0" prefWidth="23.0" style="-fx-background-color: beige; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;">
                <graphic>
                   <ImageView fitHeight="38.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -164,11 +167,11 @@
                      </image>
                   </ImageView>
                </graphic></Button>
-            <Button mnemonicParsing="false" onAction="#salir" prefHeight="33.0" prefWidth="23.0" style="-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;">
+            <Button mnemonicParsing="false" onAction="#salir" prefHeight="33.0" prefWidth="23.0" style="-fx-background-color: beige; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;">
                <graphic>
                   <ImageView fitHeight="37.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@iconos/salir.png" />
+                        <Image url="@iconos/x.png" />
                      </image>
                   </ImageView>
                </graphic></Button>

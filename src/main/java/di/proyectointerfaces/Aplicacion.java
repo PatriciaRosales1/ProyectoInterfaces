@@ -20,6 +20,10 @@ public class Aplicacion extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(Aplicacion.class.getResource("menu.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 900, 600);
         stage.setTitle("Palabra del dia");
+        stage.setMinHeight(600);
+        stage.setMaxHeight(600);
+        stage.setMinWidth(900);
+        stage.setMaxWidth(900);
         stage.setScene(scene);
         stage.show();
     }
