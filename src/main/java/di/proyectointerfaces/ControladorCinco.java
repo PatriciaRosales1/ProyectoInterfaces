@@ -147,13 +147,27 @@ public class ControladorCinco implements Initializable {
     /**Método para comprobar si la palabra es correcta o no*/
     @FXML
     private void comprobarPalabra() {
-        // Verificar si se han alcanzado el máximo de intentos
-        if (intentosRealizados == intentosMaximos) {
-            mostrarMensaje("¡Lo siento!", "Has alcanzado el límite de intentos.\nLa palabra correcta era: " + palabraSecreta);
-            return;
-        }
-
         String palabraIngresada = l1.getText() + l2.getText() + l3.getText() + l4.getText() + l5.getText();
+
+        if (palabraIngresada.equals(palabraSecreta)) {
+            mostrarMensaje("¡Felicidades!", "¡" + palabraSecreta + " es la palabra correcta!");
+        } else {
+            intentosRealizados++;
+
+            if (intentosRealizados == intentosMaximos) {
+                mostrarMensaje("¡Lo siento!", "Has alcanzado el límite de intentos.\nLa palabra correcta era: " + palabraSecreta);
+                return;
+            }
+
+            l1.clear();
+            l2.clear();
+            l3.clear();
+            l4.clear();
+            l5.clear();
+
+            Label intento = new Label(palabraIngresada);
+            intentos.getChildren().add(intento);
+        }
 
         for (Node nodo : hboxBotones1.getChildren()) {
             if (nodo instanceof Button) {
@@ -200,22 +214,10 @@ public class ControladorCinco implements Initializable {
                         boton.setStyle("-fx-background-color: red; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
                     }
                 }
+
             }
         }
 
-        if (palabraIngresada.equals(palabraSecreta)) {
-            mostrarMensaje("¡Felicidades!", "¡" + palabraSecreta + " es la palabra es correcta!");
-        } else {
-            l1.clear();
-            l2.clear();
-            l3.clear();
-            l4.clear();
-            l5.clear();
-
-            Label intento = new Label(palabraIngresada);
-            intentos.getChildren().add(intento);
-            intentosRealizados++;
-        }
     }
 
 
@@ -241,6 +243,8 @@ public class ControladorCinco implements Initializable {
         l4.clear();
         l5.clear();
         intentos.getChildren().clear();
+        intentosRealizados = 0;
+        letrasPulsadas.clear();
 
         for (Node nodo : hboxBotones1.getChildren()) {
             if (nodo instanceof Button) {
@@ -258,7 +262,7 @@ public class ControladorCinco implements Initializable {
             if (nodo instanceof Button) {
                 Button boton = (Button) nodo;
                 boton.setStyle("-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;");
-                botonComprobar.setStyle("-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
+                botonComprobar.setStyle("-fx-background-color: steelblue; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
 
             }
         }
@@ -275,7 +279,11 @@ public class ControladorCinco implements Initializable {
 
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-
+            stage.setTitle("Palabra del dia");
+            stage.setMinHeight(600);
+            stage.setMaxHeight(600);
+            stage.setMinWidth(900);
+            stage.setMaxWidth(900);
 
             stage.show();
 

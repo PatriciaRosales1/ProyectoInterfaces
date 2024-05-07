@@ -67,7 +67,11 @@ public class Controlador implements Initializable {
 
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-
+            stage.setTitle("Palabra del dia (versión fácil)");
+            stage.setMinHeight(600);
+            stage.setMaxHeight(600);
+            stage.setMinWidth(900);
+            stage.setMaxWidth(900);
 
             stage.show();
 
@@ -87,7 +91,11 @@ public class Controlador implements Initializable {
 
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-
+            stage.setTitle("Palabra del dia (versión normal)");
+            stage.setMinHeight(600);
+            stage.setMaxHeight(600);
+            stage.setMinWidth(900);
+            stage.setMaxWidth(900);
 
             stage.show();
 
@@ -107,7 +115,11 @@ public class Controlador implements Initializable {
 
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-
+            stage.setTitle("Palabra del dia (versión difícil)");
+            stage.setMinHeight(600);
+            stage.setMaxHeight(600);
+            stage.setMinWidth(900);
+            stage.setMaxWidth(900);
 
             stage.show();
 
