@@ -32,12 +32,14 @@
   - seis.fxml
   - siete.fxml
 
-# Explicación botones en las ventanas de cada opción
+# Explicación del juego
+- Para escribir en los cuadros de texto hay que pulsar los botones del teclado de la pantalla.
 - El botón con fondo azul al lado del teclado es para comprobar la palabra.
 - Botones inferiores: 
   - El primero es para empezar una nueva partida.
   - El segundo es para volver al menú de inicio.
   - El tercero es para cerrar la aplicación.
+- A la derecha aparece un cuadro con las opciones que se han intentado y que no sean la palabra correcta.
  
 # Capturas
 - Menú
