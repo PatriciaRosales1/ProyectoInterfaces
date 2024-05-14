@@ -31,7 +31,7 @@ import java.util.*;
 
 public class ControladorCinco implements Initializable {
     private String palabraSecreta;
-    private final int intentosMaximos = 5;
+    private final int intentosMaximos = 8;
     private int intentosRealizados = 0;
 
     @FXML
@@ -177,9 +177,9 @@ public class ControladorCinco implements Initializable {
                 // Verificar si la letra del botón ha sido pulsada y cambia el color según esté o no en la palabra secreta
                 if (letrasPulsadas.contains(letraBoton)) {
                     if (palabraSecreta.contains(letraBoton)) {
-                        boton.setStyle("-fx-background-color: green; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: #00b200; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
                     } else {
-                        boton.setStyle("-fx-background-color: red; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: #d30303; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
                     }
                 }
             }
@@ -193,9 +193,9 @@ public class ControladorCinco implements Initializable {
                 // Verificar si la letra del botón ha sido pulsada y cambia el color según esté o no en la palabra secreta
                 if (letrasPulsadas.contains(letraBoton)) {
                     if (palabraSecreta.contains(letraBoton)) {
-                        boton.setStyle("-fx-background-color: green; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: #00b200; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
                     } else {
-                        boton.setStyle("-fx-background-color: red; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: #d30303; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
                     }
                 }
             }
@@ -209,9 +209,9 @@ public class ControladorCinco implements Initializable {
                 // Verificar si la letra del botón ha sido pulsada y cambia el color según esté o no en la palabra secreta
                 if (letrasPulsadas.contains(letraBoton)) {
                     if (palabraSecreta.contains(letraBoton)) {
-                        boton.setStyle("-fx-background-color: green; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: #00b200; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
                     } else {
-                        boton.setStyle("-fx-background-color: red; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black;");
+                        boton.setStyle("-fx-background-color: #d30303; -fx-background-radius: 5px; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
                     }
                 }
 
@@ -262,7 +262,7 @@ public class ControladorCinco implements Initializable {
             if (nodo instanceof Button) {
                 Button boton = (Button) nodo;
                 boton.setStyle("-fx-background-color: none; -fx-border-radius: 5px; -fx-border-color: black;");
-                botonComprobar.setStyle("-fx-background-color: steelblue; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white");
+                botonComprobar.setStyle("-fx-background-color: cyan; -fx-border-radius: 5px; -fx-border-color: black;");
 
             }
         }
@@ -277,7 +277,7 @@ public class ControladorCinco implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("menu.fxml"));
             Parent root = loader.load();
 
-            Stage stage = new Stage();
+            Stage stage = (Stage) l1.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Palabra del dia");
             stage.setMinHeight(600);

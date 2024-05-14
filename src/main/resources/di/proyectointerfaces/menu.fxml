@@ -3,6 +3,8 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -48,5 +50,21 @@
             <Insets top="20.0" />
          </VBox.margin>
       </VBox>
+      <HBox alignment="CENTER_RIGHT" prefHeight="99.0" prefWidth="900.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#salir" prefHeight="33.0" prefWidth="23.0" style="-fx-background-color: beige; -fx-border-radius: 5px; -fx-border-color: black; -fx-text-fill: white;">
+               <graphic>
+                  <ImageView fitHeight="28.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@iconos/x.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+         <padding>
+            <Insets right="60.0" />
+         </padding>
+      </HBox>
    </children>
 </VBox>

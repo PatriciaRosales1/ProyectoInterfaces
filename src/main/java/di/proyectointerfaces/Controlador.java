@@ -7,6 +7,7 @@
 
 package di.proyectointerfaces;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -65,7 +66,7 @@ public class Controlador implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("cinco.fxml"));
             Parent root = loader.load();
 
-            Stage stage = new Stage();
+            Stage stage = (Stage) facil.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Palabra del dia (versión fácil)");
             stage.setMinHeight(600);
@@ -75,7 +76,6 @@ public class Controlador implements Initializable {
 
             stage.show();
 
-            ((Stage) facil.getScene().getWindow()).close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -89,7 +89,7 @@ public class Controlador implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("seis.fxml"));
             Parent root = loader.load();
 
-            Stage stage = new Stage();
+            Stage stage = (Stage) medio.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Palabra del dia (versión normal)");
             stage.setMinHeight(600);
@@ -99,7 +99,6 @@ public class Controlador implements Initializable {
 
             stage.show();
 
-            ((Stage) medio.getScene().getWindow()).close();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -113,7 +112,7 @@ public class Controlador implements Initializable {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("siete.fxml"));
             Parent root = loader.load();
 
-            Stage stage = new Stage();
+            Stage stage = (Stage) dificil.getScene().getWindow();
             stage.setScene(new Scene(root));
             stage.setTitle("Palabra del dia (versión difícil)");
             stage.setMinHeight(600);
@@ -123,10 +122,15 @@ public class Controlador implements Initializable {
 
             stage.show();
 
-            ((Stage) dificil.getScene().getWindow()).close();
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+
+    /**Método para cerrar la aplicación*/
+    public void salir() {
+        Platform.exit();
     }
 
 }
