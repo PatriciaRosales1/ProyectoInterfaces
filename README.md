@@ -23,7 +23,7 @@
 - Carpeta resources
   - iconos
     - +.png
-    - flecha.png
+    - comprobar.png
     - volver.png
     - x.png
   - cinco.fxml
@@ -38,15 +38,16 @@
 - Botones inferiores: 
   - El primero es para empezar una nueva partida.
   - El segundo es para volver al menú de inicio.
-  - El tercero es para cerrar la aplicación.
+  - El tercero (que está un poco más abajo) es para cerrar la aplicación.
 - A la derecha aparece un cuadro con las opciones que se han intentado y que no sean la palabra correcta.
  
 # Capturas
 - Menú
-![menu](https://github.com/PatriciaRosales1/ProyectoInterfaces/assets/144927796/7b3a54e7-14ac-440b-9f6b-df017261d33f)
+![menu](https://github.com/PatriciaRosales1/ProyectoInterfaces/assets/144927796/350cd195-5ffe-49a0-b8cc-25b728a40ee2)
 - Opción de 5 letras
-![5letras](https://github.com/PatriciaRosales1/ProyectoInterfaces/assets/144927796/192d854b-2b82-4e19-94fa-c69f46bbc3d8)
+![nivelFacil](https://github.com/PatriciaRosales1/ProyectoInterfaces/assets/144927796/474dffbc-e6f2-444c-a583-33e4fafe774e)
 - Opción de 6 letras
-![6letras](https://github.com/PatriciaRosales1/ProyectoInterfaces/assets/144927796/4cb6c85c-83f0-44f0-9fe2-24e1e115b52c)
+![nivelMedio](https://github.com/PatriciaRosales1/ProyectoInterfaces/assets/144927796/b9d5557a-c9ef-4875-9c88-cc39d4efc3a4)
 - Opción de 7 letras
-![7letras](https://github.com/PatriciaRosales1/ProyectoInterfaces/assets/144927796/c170f4f9-3903-48bf-a624-53b4c3302160)
+![nivelDificil](https://github.com/PatriciaRosales1/ProyectoInterfaces/assets/144927796/b91138e8-749f-4e3d-9e5c-e71f1abd8f0c)
+
